@@ -1,4 +1,8 @@
 Papernapkin::Application.routes.draw do
+  get "messages/new"
+
+  get "messages/create"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
