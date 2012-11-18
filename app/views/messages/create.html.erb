@@ -23,26 +23,7 @@
     <h2 class="tagline">Imagine: An inspired name as your domain.</h2><br>
     <strong class="msg">Interested in buying Papernapkin.com?<br>
     Please send us a note. Thanks.</strong>
-    <form action="/" class="new_message" id="new_message" method="post">
-
-      <div class="single-line-container">
-        <div class="single-line">
-          <input class="form-input" id="first_name" name="first_name" placeholder="First name" size="30" type="text" />
-        </div>
-        <div class="single-line">
-          <input class="form-input" id="last_name" name="last_name" placeholder="Last name" size="30" type="text" />
-        </div>
-        <div class="single-line">
-          <input class="form-input" id="email" name="email" placeholder="Email" size="30" type="text" />
-        </div>
-      </div>
-      <textarea class="multi-line" cols="40" id="comments" name="content" placeholder="Comments" rows="20"></textarea>
-      <input id="send-btn" type="submit" value="Send" />
-      <div class="clear"></div>
-      <div class="vizcab">
-        <a href="http://vizcab.com">Vizcab.com</a>
-      </div>
-    </form>
+     <%= render 'form' %>
   </div>
 </body>
 </html>

@@ -1,10 +1,7 @@
 class MessageMailer < ActionMailer::Base
-  default from: "michael@papernapkin.com"
-end
-
-class MessageMailer < ActionMailer::Base
-  default from: ""
+  default from: "joshua.f.rowley@gmail.com"
   def inquiry(message)
-     mail(:to => "joshua.f.rowley@gmail.com" , :subject => "Re: Papernapkin.com from #{message.contact.full_name}", :from => message.contact.email)
+    @message = message
+    mail(:to => "joshua.f.rowley@gmail.com" , :subject => "Re: Papernapkin.com, from #{message.contact.full_name}", :reply_to => "#{message.contact.email}")
   end
 end

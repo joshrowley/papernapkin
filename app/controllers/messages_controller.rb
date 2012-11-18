@@ -10,8 +10,8 @@ class MessagesController < ApplicationController
 
   def create
     @contact = Contact.find_or_create_by_email( :first_name => params[:first_name],
-                    :last_name => params[:last_name],
-                    :email => params[:email]  )
+                                                :last_name => params[:last_name],
+                                                :email => params[:email]  )
     @message = @contact.messages.build(:content => params[:content])
 
     respond_to do |format|
