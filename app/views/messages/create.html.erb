@@ -1,2 +1,48 @@
-<h1>Messages#create</h1>
-<p>Find me in app/views/messages/create.html.erb</p>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Papernapkin</title>
+  <link rel="stylesheet" type="text/css" href="css/papernapkin.css">
+  <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36244108-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+  </script>
+</head>
+<body>
+  <div id="container">
+    <h1 class="domain">PaperNapkin.<span class="tld">com</span></h1>
+    <h2 class="tagline">Imagine: An inspired name as your domain.</h2><br>
+    <strong class="msg">Interested in buying Papernapkin.com?<br>
+    Please send us a note. Thanks.</strong>
+    <form action="/" class="new_message" id="new_message" method="post">
+
+      <div class="single-line-container">
+        <div class="single-line">
+          <input class="form-input" id="first_name" name="first_name" placeholder="First name" size="30" type="text" />
+        </div>
+        <div class="single-line">
+          <input class="form-input" id="last_name" name="last_name" placeholder="Last name" size="30" type="text" />
+        </div>
+        <div class="single-line">
+          <input class="form-input" id="email" name="email" placeholder="Email" size="30" type="text" />
+        </div>
+      </div>
+      <textarea class="multi-line" cols="40" id="comments" name="content" placeholder="Comments" rows="20"></textarea>
+      <input id="send-btn" type="submit" value="Send" />
+      <div class="clear"></div>
+      <div class="vizcab">
+        <a href="http://vizcab.com">Vizcab.com</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
