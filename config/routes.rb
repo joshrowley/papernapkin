@@ -1,5 +1,5 @@
 Papernapkin::Application.routes.draw do
-  get "/" => "messages#new"
+  get "/" => "messages#new", :as => "new_message"
   post "/" => "messages#create"
 
   # The priority is based upon order of creation:
