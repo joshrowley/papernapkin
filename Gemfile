@@ -7,7 +7,6 @@ gem 'rails', '3.2.8'
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'debugger'
 end
 
 group :production do
@@ -27,7 +26,6 @@ group :assets do
 end
 
 gem 'jquery-rails'
-gem 'newrelic_rpm'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
